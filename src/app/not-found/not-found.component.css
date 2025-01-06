@@ -12,3 +12,9 @@ h1 {
 h1::selection{
 background-color: rgba(85, 85, 218, 0.405);
 }
+@media (max-width: 800px) {
+  .content {
+    width: 100% !important;
+    height: 40% !important;
+  }
+}
