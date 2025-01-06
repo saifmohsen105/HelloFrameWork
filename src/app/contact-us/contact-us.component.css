@@ -1,0 +1,108 @@
+input {
+  outline: none;
+  color: rgba(127, 255, 212, 0.822) !important;
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: rgba(127, 255, 212, 0.445);
+}
+input.is-invalid {
+  border-color: red;
+}
+input.is-invalid::placeholder {
+  color: red;
+}
+input.form-control {
+  border: 1px solid !important;
+  display: inline;
+}
+input::selection {
+  background-color: rgba(127, 255, 212, 0.445);
+}
+input.form-control:focus {
+  box-shadow: 0 0 5px 5px rgba(127, 255, 212, 0.445) !important;
+}
+input:focus {
+  background-color: transparent;
+}
+
+label {
+  color: #1abc9c;
+  position: absolute;
+  /* z-index: -1; */
+  transition: 0.7s ease;
+
+  left: 30%;
+  transform: translateY(-90px);
+  transition: all 0.5s !important;
+  -webkit-transition: all 0.5s !important;
+  -moz-transition: all 0.5s !important;
+  -ms-transition: all 0.5s !important;
+  -o-transition: all 0.5s !important;
+}
+button {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.625rem 3.75rem;
+  border: 3px solid rgb(127, 255, 212);
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
+  color: rgba(127, 255, 212, 0.742);
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  background-color: transparent;
+  border-radius: 25px;
+}
+button::before {
+  content: "";
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  background-color: rgba(127, 255, 212, 0.445);
+  z-index: -1;
+  border-radius: 25px;
+}
+button:hover,
+button:focus {
+  color: white;
+}
+button:hover::before,
+button:focus:hover {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+button:active {
+  transform: scale(0.9);
+}
+.showLabel {
+  opacity: 1;
+  transition: all 0.7s ease;
+}
+.hideLabel {
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+@media (max-width: 992px) {
+  .content {
+    width: 100% !important;
+  }
+  input {
+    width: 100% !important;
+  }
+  label{
+    left: 10%;
+  }
+}

@@ -1,0 +1,19 @@
+<section>
+  <div class="container vh-100 mt-5 pt-5 text-center d-flex justify-content-center">
+    <div class="content w-75">
+      <h1 class="text-white fw-bold mt-5">Contact section</h1>
+      <app-lines></app-lines>
+      <div class="form ">
+        @for (i of Input; track $index) {
+        <div class="position-relative">
+          <input [type]="i" [placeholder]="labelsAndPlac[$index]" [id]="labelsAndPlac[$index]"
+            class="form-control w-50 mx-auto mt-3 rounded-4 p-2 my-3 border border-start-0 border-end-0 border-top-0 "
+            (input)="checkInputIsEmpty($event)" >
+        </div>
+        <label [for]="labelsAndPlac[$index]" class="text-center" [class] ="isEmptyInputs[$index]?'hideLabel':'showLabel'" >{{labelsAndPlac[$index]}}</label>
+        }
+      </div>
+   <app-btm></app-btm>
+    </div>
+  </div>
+</section>

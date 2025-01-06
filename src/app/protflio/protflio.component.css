@@ -1,0 +1,19 @@
+.container {
+  min-height: 100vh;
+}
+picture {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+picture:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #00000074;
+}
+.p-block{
+  padding-top: 6.25rem;
+  padding-bottom: 1.875rem;
+}

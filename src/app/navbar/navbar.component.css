@@ -1,0 +1,9 @@
+nav{
+  background-color: #2C3E50;
+}
+.active{
+  background-color: #31689e;
+  border-radius: 25px;
+  width: fit-content;
+  padding-inline: .625rem;
+}

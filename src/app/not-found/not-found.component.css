@@ -1,0 +1,14 @@
+h1 {
+  background: linear-gradient(to left,rgb(254, 254, 254) , rgb(120, 120, 216));
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 5px;
+  font-family: serif;
+}
+.content{
+  background-image:linear-gradient(to left,#365c6e,#2e4d5c) ;
+  box-shadow: 0 0 5px 5px #5093b5;
+}
+h1::selection{
+background-color: rgba(85, 85, 218, 0.405);
+}

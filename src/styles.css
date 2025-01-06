@@ -1,0 +1,7 @@
+:root{
+  --primary-bg:#3b535f;
+}
+section,header{
+  background-color: var(--primary-bg);
+}
+

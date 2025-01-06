@@ -1,0 +1,41 @@
+<section (click)="clearImg()">
+  <div class="  container position-relative d-flex justify-content-center align-items-center p-block">
+    <div class="row gy-2">
+      <div class="col-lg-4 col-md-6" (click)="stopPropagation($event)">
+        <picture (click)="findImg('/images/poert1.png')">
+          <img src="/images/poert1.png" class="w-100" alt="poert1">
+        </picture>
+      </div>
+      <div class="col-lg-4 col-md-6" (click)="stopPropagation($event)">
+        <picture (click)="findImg('/images/port2.png')">
+          <img src="/images/port2.png" class="w-100" alt="port2">
+        </picture>
+      </div>
+      <div class="col-lg-4 col-md-6" (click)="stopPropagation($event)">
+        <picture (click)="findImg('/images/port3.png')">
+          <img src="/images/port3.png" class="w-100" alt="port3">
+        </picture>
+      </div>
+      <div class="col-lg-4 col-md-6" (click)="stopPropagation($event)">
+        <picture (click)="findImg('/images/poert1.png')">
+          <img src="/images/poert1.png" class="w-100" alt="poert1">
+        </picture>
+      </div>
+      <div class="col-lg-4 col-md-6" (click)="stopPropagation($event)">
+        <picture (click)="findImg('/images/port2.png')">
+          <img src="/images/port2.png" class="w-100" alt="port2">
+        </picture>
+      </div>
+      <div class="col-lg-4 col-md-6" (click)="stopPropagation($event)">
+        <picture (click)="findImg('/images/port3.png')">
+          <img src="/images/port3.png" class="w-100" alt="port3">
+        </picture>
+      </div>
+    </div>
+    <div class="box position-absolute text-center">
+      <div class="content" (click)="stopPropagation($event)">
+        <img [src]="img" class="w-75 rounded-2" alt="">
+      </div>
+    </div>
+  </div>
+</section>
